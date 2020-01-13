@@ -1,0 +1,108 @@
+@import "var";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  background-color: $bodyBackground;
+}
+
+body {
+  color: $fontColor;
+}
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+#header {
+  height: 150px;
+  background-color: $headerBackground;
+  color: $fontColor2;
+  text-transform: uppercase;
+  padding-top: 50px;
+
+  h1 {
+    text-align: center;
+    font-weight: bold;
+  }
+
+  @media (min-width: 100px) and (max-width: 364px) {
+    height: 100px;
+    padding-top: 30px;
+    h1 {
+      font-size: 28px;
+    }
+  }
+
+  @media (min-width: 365px) and (max-width: 767px) {
+    height: 100px;
+    padding-top: 30px;
+    h1 {
+      font-size: 28px;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 992px) {
+
+  }
+}
+
+#main {
+  height: 300px;
+  background-color: $containerBackground;
+  padding: 120px 0px 20px 0px;
+  color: $fontColor;
+  text-align: center;
+
+  .form-control {
+    text-align: center;
+  }
+
+  .row {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  #search-btn {
+    background-color: $buttonBackground;
+    text-transform: uppercase;
+    font-size: 15px;
+    border: none;
+    padding: 10px 0px 10px 0px;
+    margin: 25px;
+  }
+}
+
+.table {
+  margin-bottom: 0;
+  border: 5px dashed $buttonBackground;
+  padding-bottom: 20px;
+}
+
+#results{
+  background-color: $containerBackground;
+  padding: 0 0 50px 0;
+  .table {
+    margin-bottom: 0;
+  }
+}
+
+#footer {
+  height: 100px;
+  padding: 30px;
+  background-color: $footerBackground;
+  color: $fontColor;
+
+  h3 {
+    text-align: center;
+    font-size: 20px;
+  }
+}
+
